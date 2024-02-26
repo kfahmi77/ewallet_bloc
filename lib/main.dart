@@ -1,5 +1,5 @@
+import 'package:ewallet_bloc/ui/views/splash_view.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 void main() {
   runApp(const MainApp());
@@ -10,16 +10,9 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: SvgPicture.asset(
-            'assets/images/logo.svg',
-            width: 300,
-            height: 300,
-          ),
-        ),
-      ),
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: SplashView()
     );
   }
 }
